@@ -19,3 +19,27 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+input {
+  box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.border-gradient {
+  border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+  border-radius: 5px; /* this doesn't work */
+  border-width: 4px;
+  border-style: solid;
+  padding: 5px;
+}
