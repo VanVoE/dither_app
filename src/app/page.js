@@ -145,11 +145,11 @@ const [selectedAlgo, setSelectedAlgo] = useState('0')
 
       </nav>
      
-      <div className="w-[80%] mx-auto mt-20">
-     <div className="grid grid-cols-6">
+      <div className="w-[100%] md:w-[80%] mx-auto mt-20">
+     <div className="grid grid-cols-1 md:grid-cols-6">
 
        {/* col 1 */}
-      <div className="col-span-2 ">
+      <div className="col-span-1 md:col-span-2 ">
         { image ? (
           
             <img src={image} className="w-[250px] h-[250px] mb-6" />
@@ -215,7 +215,7 @@ const [selectedAlgo, setSelectedAlgo] = useState('0')
       
       
       {/* col 2 */}
-      <div className="flex flex-col space-y-4 col-span-4 items-center ">
+      <div className="flex flex-col space-y-4 col-span-1 md:col-span-4 items-center ">
        
         <div>
          {loaded? 
